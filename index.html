@@ -13,6 +13,8 @@
     <style>
         :root {
             --abv-width: 20%;
+            --max-width: 325px;
+            --max-height: 180px;
         }
 
         p {
@@ -42,6 +44,7 @@
         }
 
         .header_content {
+            padding-top: 30px;
             font-family: 'Titillium Web', sans-serif;
             display: -webkit-box;
             display: -ms-flexbox;
@@ -156,22 +159,22 @@
         }
 
         .video_block div p {
-            width: 375px;
+            width: var(--max-width);
         }
 
         .video {
-            height: 210px;
-            width: 375px;
+            height: var(--max-height);
+            width: var(--max-width);
         }
 
         @media (max-width: 1104px) {
-            .video_block div {
-                max-width: 100%;
+            :root {
+                --max-width: 665px;
+                --max-height: 385px;
             }
 
-            .video {
-                height: 385px;
-                width: 665px;
+            .video_block div {
+                max-width: 100%;
             }
 
             .header_content img {
@@ -180,9 +183,9 @@
         }
 
         @media (max-width: 900px) {
-            .video {
-                height: 220px;
-                width: 375px;
+            :root {
+                --max-width: 375px;
+                --max-height: 210px;
             }
 
             .header_content img {
@@ -194,7 +197,7 @@
             }
 
             .video_block div p {
-                width: 375px;
+                width: var(--max-width);
             }
 
             .adv_inner p {
@@ -244,6 +247,8 @@
                 padding: 0 0 0 10px;
             }
         }
+
+        /*# sourceMappingURL=style.css.map */
     </style>
 
 </head>
@@ -267,6 +272,7 @@
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, quod? Lorem ipsum dolor sit, amet
                         consectetur adipisicing elit. Illo, voluptas?</p>
                 </div>
+
             </div>
         </div>
         <div class="adv">
