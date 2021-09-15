@@ -38,7 +38,7 @@
 
         .content {
             padding: 15px;
-            width: calc(80% - 70px);
+            width: 100%;
             min-height: calc(100vh - 30px);
             font-family: 'Titillium Web', sans-serif;
         }
@@ -183,11 +183,6 @@
         }
 
         @media (max-width: 900px) {
-            :root {
-                --max-width: 375px;
-                --max-height: 210px;
-            }
-
             .header_content img {
                 max-height: 70px;
             }
@@ -204,6 +199,13 @@
                 padding: 5px;
                 font-size: 16px;
                 min-height: 30px;
+            }
+        }
+
+        @media (max-width: 720px) {
+            :root {
+                --max-width: 375px;
+                --max-height: 210px;
             }
         }
 
@@ -264,6 +266,11 @@
         <div class="content">
             <div class="video_block">
                 <div>
+                    <iframe class="video" src="https://www.youtube.com/embed/SILDMSeZ_qA" frameborder="0"></iframe>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, quod? Lorem ipsum dolor sit, amet
+                        consectetur adipisicing elit. Illo, voluptas?</p>
+                </div>
+                <div>
                     <iframe class="video" src="https://www.youtube.com/embed/Z8s6GNEpBjo" frameborder="0"></iframe>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, blanditiis?</p>
                 </div>
@@ -275,7 +282,7 @@
 
             </div>
         </div>
-        <div class="adv">
+        <!-- <div class="adv">
             <div class="adv_inner">
                 <img src="https://ichef.bbci.co.uk/news/976/cpsprodpb/14C03/production/_118959948_gettyimages-1304905680.jpg"
                     alt="adv">
@@ -284,7 +291,7 @@
                 <img src="https://ichef.bbci.co.uk/news/800/cpsprodpb/A79E/production/_120501924_gettyimages-1235124039.jpg"
                     alt="adv">
             </div>
-        </div>
+        </div> -->
     </div>
 
 </body>
