@@ -11,12 +11,6 @@
     <title>Document</title>
 
     <style>
-        :root {
-            --abv-width: 20%;
-            --max-width: 325px;
-            --max-height: 180px;
-        }
-
         p {
             cursor: default;
         }
@@ -73,15 +67,6 @@
             padding: 0 0 0 40px;
         }
 
-        .adv {
-            position: absolute;
-            border-left: 1px solid #f1f1f1;
-            height: 100%;
-            width: var(--abv-width);
-            top: 0;
-            right: 0;
-            padding: 0 20px;
-        }
 
         .adv_inner {
             margin-top: 30px;
@@ -160,18 +145,23 @@
         }
 
         .video_block div p {
-            width: var(--max-width);
+            width: 325px;
         }
 
         .video {
-            height: var(--max-height);
-            width: var(--max-width);
+            height: 180px;
+            width: 325px;
         }
 
         @media (max-width: 1104px) {
-            :root {
-                --max-width: 665px;
-                --max-height: 385px;
+
+            .video_block div p {
+                width: 665px;
+            }
+
+            .video {
+                height: 385px;
+                width: 665px;
             }
 
             .video_block div {
@@ -198,9 +188,6 @@
                 padding: 0 5px 0 27px;
             }
 
-            .video_block div p {
-                width: var(--max-width);
-            }
 
             .adv_inner p {
                 padding: 5px;
@@ -210,9 +197,14 @@
         }
 
         @media (max-width: 720px) {
-            :root {
-                --max-width: 375px;
-                --max-height: 210px;
+
+            .video_block div p {
+                width: 375px;
+            }
+
+            .video {
+                height: 210px;
+                width: 375px;
             }
         }
 
@@ -257,8 +249,6 @@
                 padding: 0 0 0 16px;
             }
         }
-
-        /*# sourceMappingURL=style.css.map */
     </style>
 
 </head>
@@ -267,7 +257,7 @@
     <div class="header_content">
         <img src="https://cdn.filestackcontent.com/7BsDRbL6R9iuMMcxePNf" alt="">
         <p>is a proud sponsor of</p>
-        <img src="https://i.ibb.co/qnnc2cX/logo-2.png" alt="">
+        <img src="https://i.ibb.co/dfqNKDs/logo-2.png" alt="">
     </div>
 
     <div class="main">
